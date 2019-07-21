@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Italiana|Suez+One&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    width: 99%;
+}
+
+h1,h2,h3,h4{
+    font-family:'Suez One', serif;
+}
+
+.cabecera{
+    width: 100%;
+    height: 160px;
+    background-image: url("/img/lionb.jpg");
+
+    margin-bottom: 5px;
+
+}
+.titulo{
+    color: white;
+    text-align: center;
+
+}
+
+
+.navegador{
+    width: 100%;
+    list-style: none;
+    position: relative;
+    margin: 5px; 
+}
+
+
+.navegador .item_menu{
+
+    width: 100%;
+    list-style: none;
+   
+}
+
+.menu{
+    display: flex;
+    
+}
+
+.boton {
+    width: 100%;
+    position: relative;
+
+    
+}
+
+.icon-menu{
+    color: black;
+    border-radius: 5px;
+    font-size: 30px;
+    width: 0;
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+
+
+
+}
+
+.mostrar{
+
+    left: -120%;
+   
+
+}
+
+
+body{
+    background:  #9abdff93;
+    font-family: 'Italiana', serif;
+}
+
+
+footer{
+    background:   #098b8b93;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contenedor{
+display: flex;
+
+
+
+}
+
+.bloques{
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+
+
+}
+#imagen{
+    position: static;
+}
+.img_item{
+    list-style: none;
+}
+
+.img_bloques{
+    display: inline;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+
+    height: auto;
+    animation: cambio 16s infinite alternate linear;
+
+}
+
+@keyframs cambio {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+}
+*/
+
+
+@media (max-width: 600px) {
+    
+
+    .navegador{
+        left: 0%;
+        width: 100%;
+        list-style: none;
+        position: relative;
+        visibility: none;
+
+
+    
+
+    
+    }
+
+    .icon-menu{
+        visibility: visible;
+        right: 50px;
+        top: 0px;
+    
+    
+    }
+
+    .menu{
+        display: block;
+    
+    }
+
+
+    .titulo {
+        font-size: 30px;
+    }
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
